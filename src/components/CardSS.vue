@@ -39,10 +39,12 @@ export default {
                 person_name.value = `${name.title} ${name.first} ${name.last}`;
                 age.value = dob.age;
                 person_email.value = email;
-                console.log(image, age, person_email, person_name);
+                //console.log(image, age, person_email, person_name);
 
             }catch(err){
-                console.log('err')
+                person_name.value = "FAILED TO LOAD";
+                age.value = "FAILED TO LOAD";
+                person_email.value = "FAILED TO LOAD";
             }
         }
 
